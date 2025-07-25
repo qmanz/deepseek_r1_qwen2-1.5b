@@ -36,7 +36,7 @@ fi
 # 2. 运行冷启动训练（如果需要）
 if [ ! -d "./models/1_cot_start_completed" ]; then
     echo "开始冷启动训练..."
-    python src/training/cold_start.py
+    python src/training/1_cold_start.py
     check_status
 else
     echo "冷启动已完成，跳过冷启动步骤。"
